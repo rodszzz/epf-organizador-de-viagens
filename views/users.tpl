@@ -6,6 +6,9 @@
         <a href="/users/add" class="btn btn-primary">
             <i class="fas fa-plus"></i> Novo Usuário
         </a>
+        <a href="/login" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Login
+        </a>
     </div>
 
     <div class="table-container">
@@ -32,6 +35,10 @@
                     <td class="actions">
                         <a href="/users/edit/{{u.id}}" class="btn btn-sm btn-edit">
                             <i class="fas fa-edit"></i> Editar
+                        </a>
+
+                        <a href="https://youtube.com/">
+                            youtube
                         </a>
 
                         <form action="/users/delete/{{u.id}}" method="post" 

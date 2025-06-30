@@ -20,7 +20,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: #f9f9f9;
   padding: 0;
   margin: 0;
 }
@@ -35,3 +34,12 @@ body {
   box-shadow: var(--shadow);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  /* Adiciona esta linha para alinhar os itens em coluna */
+  justify-content: flex-start;
+  /* Alinha o conteúdo no início, em vez de no centro */
+  align-items: center;
+  color: green;
+}

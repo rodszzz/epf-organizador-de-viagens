@@ -4,5 +4,17 @@
         "name": "UsuÃ¡rio Teste",
         "email": "uduarioteste@email.com",
         "birthdate": "1999-10-21"
+    },
+    {
+        "id": 2,
+        "name": "marcos",
+        "email": "marcos@email.com",
+        "birthdate": "0002-02-03"
+    },
+    {
+        "id": 3,
+        "name": "fdasfasdfsdaf",
+        "email": "fdasfdsaf@email.com",
+        "birthdate": "242314-04-23"
     }
 ]
