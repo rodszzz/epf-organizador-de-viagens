@@ -27,9 +27,12 @@ class BaseController:
     def outra_func(self):
         return self.render('outro_arquivo')
 
+    # TODO: mudar redirect para "/login"
+    # pq ao entrar vc "loga" ou cria sua conta,
+    # aí só depois vc faz uso do serviço!!!
     def home_redirect(self):
         """Redireciona a rota raiz para /users"""
-        return self.redirect('/users')
+        return self.redirect('/login')
 
     def helper(self):
         return self.render('helper-final')

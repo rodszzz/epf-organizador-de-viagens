@@ -13,8 +13,8 @@
   <div class="main-box">
     <div class="logo-div">
       <div class="logo-box">
-        <img src="odinLogo.png" alt="Odin Project logo" class="logo-image" />
-        <p class="logo-text">ODIN</p>
+        <!--<img src="algumaLogo.png" alt="logo do projeto" class="logo-image" /> -->
+        <p class="logo-text">Organizador de Viagens</p>
       </div>
       <p class="image-credit">
         <!-- Photo by -->
@@ -25,69 +25,68 @@
         <!--   href="https://unsplash.com/backgrounds/things/weed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
         Photo by
         <a
-          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
-          West</a>
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross
+          Parmly</a>
         on
         <a
-          href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          href="https://unsplash.com/photos/aerial-photography-of-airliner-rf6ywHVkrlY">Unsplash</a>
       </p>
     </div>
 
     <div class="right-box">
       <p class="top-boilerplate boilerplate-first main-text">
-        This is not a real online service! You know you need something like
-        this in your life to help you realize your deepest dreams.
+        Crie aqui a sua conta!!!
       </p>
 
       <p class="top-boilerplate boilerplate-second main-text">
-        Sign up <em>now</em> to get started.
+         Logue <em>agora</em> para começar
       </p>
 
-      <p class="top-boilerplate main-text">You <em>know</em> you want to.</p>
+      <!-- <p class="top-boilerplate main-text">You <em>know</em> you want to.</p> -->
 
       <form action="#" method="get">
         <div class="form-section">
-          <p class="main-text">Let's do this!</p>
+          <p class="main-text">Crie sua conta!</p>
 
           <div class="form-section-right">
             <div class="form-div">
-              <label for="first_name">FIRST NAME</label> <br>
+              <label for="first_name">NOME</label> <br>
               <input type="text" id="first_name" name="first_name" required />
             </div>
 
-            <div class="form-div">
-              <label for="last_name">LAST NAME</label> <br>
-              <input type="text" id="last_name" name="last_name" required />
-            </div>
+            <!-- <div class="form-div"> -->
+              <!-- <label for="last_name">LAST NAME</label> <br> -->
+              <!-- <input type="text" id="last_name" name="last_name" required /> -->
+            <!-- </div> -->
 
             <div class="form-div">
               <label for="email">EMAIL</label> <br>
               <input type="email" id="email" name="email" required />
             </div>
 
-            <div class="form-div">
-              <label for="phone">PHONE NUMBER</label> <br>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
+            <!-- <div class="form-div"> -->
+              <!-- <label for="phone">PHONE NUMBER</label> <br> -->
+              <!-- <input type="tel" id="phone" name="phone" required /> -->
+            <!-- </div> -->
 
             <div class="form-div">
-              <label for="password">PASSWORD</label> <br>
+              <label for="password">SENHA</label> <br>
               <input class="error" type="password" id="password" name="password" minlength="8" required /> <br>
-              <span>* Passwords do not match</span>
+              <span>* senhas não iguais</span>
             </div>
 
             <div class="form-div">
-              <label for="password_confirm">CONFIRM PASSWORD</label> <br>
+              <label for="password_confirm">CONFIRME SENHA</label> <br>
               <input class="error" type="password" id="password_confirm" name="password_confirm" minlength="8"
                 required />
             </div>
 
           </div>
         </div>
-        <div><button type="submit">Create Account</button></div>
+        <div><button type="submit">Criar Conta</button></div>
       </form>
 
-      <p class="account">Already have an account? <a class="account" href="#">Log in</a></p>
+      <p class="account">Já tem uma conta? <a class="account" href="#">Log in</a></p>
     </div>
 </body>
 

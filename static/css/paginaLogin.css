@@ -9,7 +9,7 @@
 }
 
 body {
-    /* background-image: url(./weedBG.jpg); */
+    background-image: url(../img/aviao.jpg);
     /* height: 100vh; */
     /* flex-direction: column; */
 
@@ -31,7 +31,7 @@ body {
 
 .logo-div {
     /* background-image: url(./weedBG.jpg); */
-    background-image: url(./greenLeaves.jpg);
+    background-image: url(../img/aviao.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
