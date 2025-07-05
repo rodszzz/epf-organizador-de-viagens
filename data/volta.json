@@ -1,23 +1,23 @@
 {
   "search_metadata": {
-    "id": "686542d3ef15ce02f41e1057",
+    "id": "6869629e86e9fa89d6049fa1",
     "status": "Success",
-    "json_endpoint": "https://serpapi.com/searches/35a23ad18da3d808/686542d3ef15ce02f41e1057.json",
-    "created_at": "2025-07-02 14:31:47 UTC",
-    "processed_at": "2025-07-02 14:31:47 UTC",
-    "google_flights_url": "https://www.google.com/travel/flights?hl=pt-br&gl=us&curr=BRL&tfs=CBwQAhoeEgoyMDI1LTA4LTA3agcIARIDSUJacgcIARIDQlNCQgEBSAFwAZgBAg&tfu=EgIIAQ",
-    "raw_html_file": "https://serpapi.com/searches/35a23ad18da3d808/686542d3ef15ce02f41e1057.html",
-    "prettify_html_file": "https://serpapi.com/searches/35a23ad18da3d808/686542d3ef15ce02f41e1057.prettify",
-    "total_time_taken": 3.35
+    "json_endpoint": "https://serpapi.com/searches/35a23ad18da3d808/6869629e86e9fa89d6049fa1.json",
+    "created_at": "2025-07-05 17:36:30 UTC",
+    "processed_at": "2025-07-05 17:36:30 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=pt-br&gl=us&curr=BRL&tfs=CBwQAhoeEgoyMDI1LTEwLTE1agcIARIDTUlBcgcIARIDQlNCQgEBSAFwAZgBAg&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/35a23ad18da3d808/6869629e86e9fa89d6049fa1.html",
+    "prettify_html_file": "https://serpapi.com/searches/35a23ad18da3d808/6869629e86e9fa89d6049fa1.prettify",
+    "total_time_taken": 0.98
   },
   "search_parameters": {
     "engine": "google_flights",
     "hl": "pt-br",
     "gl": "us",
     "type": "2",
-    "departure_id": "IBZ",
+    "departure_id": "MIA",
     "arrival_id": "BSB",
-    "outbound_date": "2025-08-07",
+    "outbound_date": "2025-10-15",
     "currency": "BRL"
   },
   "best_flights": [
@@ -25,292 +25,195 @@
       "flights": [
         {
           "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 14:40"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-07 15:30"
-          },
-          "duration": 110,
-          "airplane": "Embraer 195",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
-          "travel_class": "Economy",
-          "flight_number": "TP 1143",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Carbon emissions estimate: 117 kg"
-          ],
-          "often_delayed_by_over_30_min": true,
-          "plane_and_crew_by": "Portugalia - Companhia Portuguesa"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-08 09:25"
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 22:35"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
             "id": "BSB",
-            "time": "2025-08-08 15:00"
+            "time": "2025-10-16 07:00"
           },
-          "duration": 575,
-          "airplane": "Airbus A330-900neo",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "duration": 445,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
           "travel_class": "Economy",
-          "flight_number": "TP 57",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 416 kg"
+          "flight_number": "G3 7749",
+          "ticket_also_sold_by": [
+            "American"
           ],
-          "often_delayed_by_over_30_min": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 1075,
-          "name": "Aeroporto Humberto Delgado",
-          "id": "LIS",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 328 kg"
+          ],
           "overnight": true
         }
       ],
-      "total_duration": 1760,
+      "total_duration": 445,
       "carbon_emissions": {
-        "this_flight": 533000,
-        "typical_for_this_route": 605000,
-        "difference_percent": -12
+        "this_flight": 328000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -36
       },
-      "price": 4624,
+      "price": 1155,
       "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFZ3RVVURFeE5ETjhWRkExTnhvTENQMmJIQkFDR2dOQ1VrdzRISERIbEFVPSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIkxJUyIsbnVsbCwiVFAiLCIxMTQzIl0sWyJMSVMiLCIyMDI1LTA4LTA4IiwiQlNCIixudWxsLCJUUCIsIjU3Il1dXQ=="
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ1pITXpjM05Ea2FDd2paaFFjUUFob0RRbEpNT0J4d3RLWUIiLFtbIk1JQSIsIjIwMjUtMTAtMTUiLCJCU0IiLG51bGwsIkczIiwiNzc0OSJdXV0="
     },
     {
       "flights": [
         {
           "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 09:00"
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 12:24"
           },
           "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 10:15"
+            "name": "Aeroporto Internacional Tocumen",
+            "id": "PTY",
+            "time": "2025-10-15 14:30"
           },
-          "duration": 75,
-          "airplane": "Airbus A321neo",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+          "duration": 186,
+          "airplane": "Boeing 737MAX 9 Passenger",
+          "airline": "COPA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
           "travel_class": "Economy",
-          "flight_number": "IB 1692",
-          "ticket_also_sold_by": [
-            "LATAM"
-          ],
-          "legroom": "71 cm",
+          "flight_number": "CM 440",
+          "legroom": "76 cm",
           "extensions": [
-            "Below average legroom (71 cm)",
-            "Wi-Fi for a fee",
+            "Average legroom (76 cm)",
             "In-seat USB outlet",
             "Stream media to your device",
-            "Carbon emissions estimate: 57 kg"
-          ],
-          "plane_and_crew_by": "Iberia Express"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 14:30"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 20:00"
-          },
-          "duration": 630,
-          "airplane": "Boeing 777",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 8075",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 475 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 22:20"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-07 23:55"
-          },
-          "duration": 95,
-          "airplane": "Airbus A320",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 3259",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 255,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD"
-        },
-        {
-          "duration": 140,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1195,
-      "carbon_emissions": {
-        "this_flight": 621000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 3
-      },
-      "price": 6570,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaFJKUWpFMk9USjhURUU0TURjMWZFeEJNekkxT1JvTENNS01LQkFDR2dOQ1VrdzRISERRcWdjPSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiSUIiLCIxNjkyIl0sWyJNQUQiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJMQSIsIjgwNzUiXSxbIkdSVSIsIjIwMjUtMDgtMDciLCJCU0IiLG51bGwsIkxBIiwiMzI1OSJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 10:20"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 11:35"
-          },
-          "duration": 75,
-          "airplane": "Boeing 737",
-          "airline": "Air Europa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
-          "travel_class": "Economy",
-          "flight_number": "UX 6020",
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 56 kg"
+            "Carbon emissions estimate: 139 kg"
           ]
         },
         {
           "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 14:30"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 20:00"
-          },
-          "duration": 630,
-          "airplane": "Boeing 777",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 8075",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 475 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 22:20"
+            "name": "Aeroporto Internacional Tocumen",
+            "id": "PTY",
+            "time": "2025-10-15 15:57"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
             "id": "BSB",
-            "time": "2025-08-07 23:55"
+            "time": "2025-10-16 00:15"
           },
-          "duration": 95,
-          "airplane": "Airbus A320",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "duration": 378,
+          "airplane": "Boeing 737",
+          "airline": "COPA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
           "travel_class": "Economy",
-          "flight_number": "LA 3259",
+          "flight_number": "CM 205",
+          "legroom": "79 cm",
+          "extensions": [
+            "Average legroom (79 cm)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 358 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 87,
+          "name": "Aeroporto Internacional Tocumen",
+          "id": "PTY"
+        }
+      ],
+      "total_duration": 651,
+      "carbon_emissions": {
+        "this_flight": 498000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -3
+      },
+      "price": 1161,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ3REVFRRME1IeERUVEl3TlJvTENQNktCeEFDR2dOQ1VrdzRISEN4cHdFPSIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIlBUWSIsbnVsbCwiQ00iLCI0NDAiXSxbIlBUWSIsIjIwMjUtMTAtMTUiLCJCU0IiLG51bGwsIkNNIiwiMjA1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 19:20"
+          },
+          "arrival_airport": {
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2025-10-15 21:59"
+          },
+          "duration": 219,
+          "airplane": "Airbus A320",
+          "airline": "Avianca",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AV.png",
+          "travel_class": "Economy",
+          "flight_number": "AV 127",
+          "ticket_also_sold_by": [
+            "Gol"
+          ],
           "legroom": "71 cm",
           "extensions": [
             "Below average legroom (71 cm)",
             "In-seat USB outlet",
             "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
+            "Carbon emissions estimate: 207 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2025-10-15 23:33"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2025-10-16 06:40"
+          },
+          "duration": 307,
+          "airplane": "Boeing 737",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+          "travel_class": "Economy",
+          "flight_number": "G3 8243",
+          "ticket_also_sold_by": [
+            "Avianca"
           ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 274 kg"
+          ],
+          "overnight": true
         }
       ],
       "layovers": [
         {
-          "duration": 175,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD"
-        },
-        {
-          "duration": 140,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
+          "duration": 94,
+          "name": "El Dorado International Airport",
+          "id": "BOG"
         }
       ],
-      "total_duration": 1115,
+      "total_duration": 620,
       "carbon_emissions": {
-        "this_flight": 620000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 2
+        "this_flight": 482000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -6
       },
-      "price": 6889,
+      "price": 1561,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaFJWV0RZd01qQjhURUU0TURjMWZFeEJNekkxT1JvTENQK0ZLaEFDR2dOQ1VrdzRISENnMkFjPSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiVVgiLCI2MDIwIl0sWyJNQUQiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJMQSIsIjgwNzUiXSxbIkdSVSIsIjIwMjUtMDgtMDciLCJCU0IiLG51bGwsIkxBIiwiMzI1OSJdXV0="
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ3hCVmpFeU4zeEhNemd5TkRNYUN3aVl3d2tRQWhvRFFsSk1PQnh3Z09FQiIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIkJPRyIsbnVsbCwiQVYiLCIxMjciXSxbIkJPRyIsIjIwMjUtMTAtMTUiLCJCU0IiLG51bGwsIkczIiwiODI0MyJdXV0="
     }
   ],
   "other_flights": [
@@ -318,75 +221,154 @@
       "flights": [
         {
           "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 14:40"
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 06:45"
           },
           "arrival_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-07 15:30"
+            "name": "Aeroporto Intercontinental George Bush",
+            "id": "IAH",
+            "time": "2025-10-15 08:42"
           },
-          "duration": 110,
-          "airplane": "Embraer 195",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "duration": 177,
+          "airplane": "Boeing 737",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
           "travel_class": "Economy",
-          "flight_number": "TP 1143",
-          "legroom": "79 cm",
+          "flight_number": "UA 1214",
+          "legroom": "76 cm",
           "extensions": [
-            "Average legroom (79 cm)",
-            "Carbon emissions estimate: 117 kg"
-          ],
-          "often_delayed_by_over_30_min": true,
-          "plane_and_crew_by": "Portugalia - Companhia Portuguesa"
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 149 kg"
+          ]
         },
         {
           "departure_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-07 17:05"
+            "name": "Aeroporto Intercontinental George Bush",
+            "id": "IAH",
+            "time": "2025-10-15 09:57"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional Tocumen",
+            "id": "PTY",
+            "time": "2025-10-15 14:14"
+          },
+          "duration": 257,
+          "airplane": "Boeing 737",
+          "airline": "United",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
+          "travel_class": "Economy",
+          "flight_number": "UA 1916",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 266 kg"
+          ],
+          "often_delayed_by_over_30_min": true
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional Tocumen",
+            "id": "PTY",
+            "time": "2025-10-15 15:57"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2025-10-16 00:15"
+          },
+          "duration": 378,
+          "airplane": "Boeing 737",
+          "airline": "COPA",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CM.png",
+          "travel_class": "Economy",
+          "flight_number": "CM 205",
+          "legroom": "79 cm",
+          "extensions": [
+            "Average legroom (79 cm)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 358 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 75,
+          "name": "Aeroporto Intercontinental George Bush",
+          "id": "IAH"
+        },
+        {
+          "duration": 103,
+          "name": "Aeroporto Internacional Tocumen",
+          "id": "PTY"
+        }
+      ],
+      "total_duration": 990,
+      "carbon_emissions": {
+        "this_flight": 775000,
+        "typical_for_this_route": 515000,
+        "difference_percent": 50
+      },
+      "price": 1560,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFaE5WUVRFeU1UUjhWVUV4T1RFMmZFTk5NakExR2dzSWtjSUpFQUlhQTBKU1REZ2NjT2ZnQVE9PSIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIklBSCIsbnVsbCwiVUEiLCIxMjE0Il0sWyJJQUgiLCIyMDI1LTEwLTE1IiwiUFRZIixudWxsLCJVQSIsIjE5MTYiXSxbIlBUWSIsIjIwMjUtMTAtMTUiLCJCU0IiLG51bGwsIkNNIiwiMjA1Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 23:00"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
             "id": "GRU",
-            "time": "2025-08-07 23:10"
+            "time": "2025-10-16 08:20"
           },
-          "duration": 605,
-          "airplane": "Airbus A330-900neo",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+          "duration": 500,
+          "airplane": "Boeing 787",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
           "travel_class": "Economy",
-          "flight_number": "TP 83",
+          "flight_number": "AA 995",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
             "Wi-Fi for a fee",
             "In-seat power & USB outlets",
             "On-demand video",
-            "Carbon emissions estimate: 453 kg"
+            "Carbon emissions estimate: 402 kg"
           ],
+          "overnight": true,
           "often_delayed_by_over_30_min": true
         },
         {
           "departure_airport": {
             "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
             "id": "GRU",
-            "time": "2025-08-08 06:00"
+            "time": "2025-10-16 13:10"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
             "id": "BSB",
-            "time": "2025-08-08 07:45"
+            "time": "2025-10-16 15:00"
           },
-          "duration": 105,
+          "duration": 110,
           "airplane": "Boeing 737",
           "airline": "Gol",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
           "travel_class": "Economy",
-          "flight_number": "G3 1492",
+          "flight_number": "G3 1484",
           "ticket_also_sold_by": [
-            "Tap Air Portugal"
+            "American"
           ],
           "legroom": "76 cm",
           "extensions": [
@@ -396,535 +378,147 @@
             "Stream media to your device",
             "Carbon emissions estimate: 91 kg"
           ]
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 95,
-          "name": "Aeroporto Humberto Delgado",
-          "id": "LIS"
-        },
-        {
-          "duration": 410,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU",
-          "overnight": true
-        }
-      ],
-      "total_duration": 1325,
-      "carbon_emissions": {
-        "this_flight": 662000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 9
-      },
-      "price": 6340,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaEpVVURFeE5ETjhWRkE0TTN4SE16RTBPVElhQ3dqcTJDWVFBaG9EUWxKTU9CeHc0b2tIIixbWyJJQloiLCIyMDI1LTA4LTA3IiwiTElTIixudWxsLCJUUCIsIjExNDMiXSxbIkxJUyIsIjIwMjUtMDgtMDciLCJHUlUiLG51bGwsIlRQIiwiODMiXSxbIkdSVSIsIjIwMjUtMDgtMDgiLCJCU0IiLG51bGwsIkczIiwiMTQ5MiJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 22:00"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 23:15"
-          },
-          "duration": 75,
-          "airplane": "Boeing 737",
-          "airline": "Air Europa",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
-          "travel_class": "Economy",
-          "flight_number": "UX 6028",
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 56 kg"
-          ],
-          "often_delayed_by_over_30_min": true
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-08 14:25"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 19:50"
-          },
-          "duration": 625,
-          "airplane": "Boeing 787",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 8075",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 444 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 22:10"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-08 23:50"
-          },
-          "duration": 100,
-          "airplane": "Airbus A321",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 3259",
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 89 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 910,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD",
-          "overnight": true
-        },
-        {
-          "duration": 140,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1850,
-      "carbon_emissions": {
-        "this_flight": 590000,
-        "typical_for_this_route": 605000,
-        "difference_percent": -2
-      },
-      "price": 6517,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaFJWV0RZd01qaDhURUU0TURjMWZFeEJNekkxT1JvTENQM2lKeEFDR2dOQ1VrdzRISENFb3djPSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiVVgiLCI2MDI4Il0sWyJNQUQiLCIyMDI1LTA4LTA4IiwiR1JVIixudWxsLCJMQSIsIjgwNzUiXSxbIkdSVSIsIjIwMjUtMDgtMDgiLCJCU0IiLG51bGwsIkxBIiwiMzI1OSJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 08:55"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Barcelona El Prat",
-            "id": "BCN",
-            "time": "2025-08-07 09:55"
-          },
-          "duration": 60,
-          "airplane": "Airbus A321",
-          "airline": "Vueling",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/VY.png",
-          "travel_class": "Economy",
-          "flight_number": "VY 3501",
-          "ticket_also_sold_by": [
-            "LATAM"
-          ],
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Carbon emissions estimate: 50 kg"
-          ],
-          "plane_and_crew_by": "Vueling Airlines S.a. for Latam Airlines Group"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Barcelona El Prat",
-            "id": "BCN",
-            "time": "2025-08-07 13:30"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 19:20"
-          },
-          "duration": 650,
-          "airplane": "Boeing 787",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 8115",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 465 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 23:25"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-08 01:05"
-          },
-          "duration": 100,
-          "airplane": "Airbus A321",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 3656",
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 89 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 215,
-          "name": "Aeroporto de Barcelona El Prat",
-          "id": "BCN"
-        },
-        {
-          "duration": 245,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1270,
-      "carbon_emissions": {
-        "this_flight": 605000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 0
-      },
-      "price": 7070,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaFJXV1RNMU1ERjhURUU0TVRFMWZFeEJNelkxTmhvTENLR1RLeEFDR2dOQ1VrdzRISENMOGdjPSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIkJDTiIsbnVsbCwiVlkiLCIzNTAxIl0sWyJCQ04iLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJMQSIsIjgxMTUiXSxbIkdSVSIsIjIwMjUtMDgtMDciLCJCU0IiLG51bGwsIkxBIiwiMzY1NiJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 17:45"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 19:05"
-          },
-          "duration": 80,
-          "airplane": "Airbus A320",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
-          "travel_class": "Economy",
-          "flight_number": "IB 1700",
-          "ticket_also_sold_by": [
-            "LATAM"
-          ],
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 58 kg"
-          ],
-          "plane_and_crew_by": "Air Nostrum  for Latam Airlines Group"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 23:45"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 05:10"
-          },
-          "duration": 625,
-          "airplane": "Boeing 787",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 715",
-          "legroom": "81 cm",
-          "extensions": [
-            "Above average legroom (81 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 442 kg"
-          ],
-          "overnight": true,
-          "plane_and_crew_by": "Latam Airlines Group"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 07:25"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-08 09:10"
-          },
-          "duration": 105,
-          "airplane": "Airbus A320",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 4676",
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 280,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD"
-        },
-        {
-          "duration": 135,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1225,
-      "carbon_emissions": {
-        "this_flight": 589000,
-        "typical_for_this_route": 605000,
-        "difference_percent": -3
-      },
-      "price": 7085,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaE5KUWpFM01EQjhURUUzTVRWOFRFRTBOamMyR2dzSXRKNHJFQUlhQTBKU1REZ2NjSkQwQnc9PSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiSUIiLCIxNzAwIl0sWyJNQUQiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJMQSIsIjcxNSJdLFsiR1JVIiwiMjAyNS0wOC0wOCIsIkJTQiIsbnVsbCwiTEEiLCI0Njc2Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 17:45"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 19:05"
-          },
-          "duration": 80,
-          "airplane": "Airbus A320",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
-          "travel_class": "Economy",
-          "flight_number": "IB 1700",
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 58 kg"
-          ],
-          "plane_and_crew_by": "Iberia Express"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 23:55"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 05:55"
-          },
-          "duration": 660,
-          "airplane": "Airbus A330",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
-          "travel_class": "Economy",
-          "flight_number": "IB 267",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 486 kg"
-          ],
-          "overnight": true
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-08 09:50"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-08 11:30"
-          },
-          "duration": 100,
-          "airplane": "Airbus A320",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 3263",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
-          ],
-          "plane_and_crew_by": "Latam Airlines Brasil"
         }
       ],
       "layovers": [
         {
           "duration": 290,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD"
-        },
-        {
-          "duration": 235,
           "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
           "id": "GRU"
         }
       ],
-      "total_duration": 1365,
+      "total_duration": 900,
       "carbon_emissions": {
-        "this_flight": 633000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 5
+        "this_flight": 495000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -4
       },
-      "price": 7265,
+      "price": 1647,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaE5KUWpFM01EQjhTVUl5TmpkOFRFRXpNall6R2dzSWlhc3NFQUlhQTBKU1REZ2NjTzJOQ0E9PSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiSUIiLCIxNzAwIl0sWyJNQUQiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJJQiIsIjI2NyJdLFsiR1JVIiwiMjAyNS0wOC0wOCIsIkJTQiIsbnVsbCwiTEEiLCIzMjYzIl1dXQ=="
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ3hCUVRrNU5YeEhNekUwT0RRYUN3aUpoZ29RQWhvRFFsSk1PQnh3ck8wQiIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIkdSVSIsbnVsbCwiQUEiLCI5OTUiXSxbIkdSVSIsIjIwMjUtMTAtMTYiLCJCU0IiLG51bGwsIkczIiwiMTQ4NCJdXV0="
     },
     {
       "flights": [
         {
           "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 08:25"
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 18:37"
           },
           "arrival_airport": {
-            "name": "Aeroporto de Amesterdão Schiphol",
-            "id": "AMS",
-            "time": "2025-08-07 11:05"
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2025-10-15 21:17"
           },
-          "duration": 160,
-          "airplane": "Boeing 737",
-          "airline": "Transavia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HV.png",
+          "duration": 220,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
           "travel_class": "Economy",
-          "flight_number": "HV 5676",
-          "ticket_also_sold_by": [
-            "KLM"
-          ],
-          "legroom": "74 cm",
+          "flight_number": "AA 915",
+          "legroom": "76 cm",
           "extensions": [
-            "Below average legroom (74 cm)",
-            "Carbon emissions estimate: 131 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Amesterdão Schiphol",
-            "id": "AMS",
-            "time": "2025-08-07 12:50"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 19:50"
-          },
-          "duration": 720,
-          "airplane": "Boeing 777",
-          "airline": "KLM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
-          "travel_class": "Economy",
-          "flight_number": "KL 791",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
+            "Average legroom (76 cm)",
             "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "On-demand video",
-            "Carbon emissions estimate: 673 kg"
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 165 kg"
           ]
         },
         {
           "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 21:40"
+            "name": "El Dorado International Airport",
+            "id": "BOG",
+            "time": "2025-10-15 23:33"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
             "id": "BSB",
-            "time": "2025-08-07 23:25"
+            "time": "2025-10-16 06:40"
           },
-          "duration": 105,
+          "duration": 307,
           "airplane": "Boeing 737",
           "airline": "Gol",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
           "travel_class": "Economy",
-          "flight_number": "G3 1418",
+          "flight_number": "G3 8243",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 274 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 136,
+          "name": "El Dorado International Airport",
+          "id": "BOG"
+        }
+      ],
+      "total_duration": 663,
+      "carbon_emissions": {
+        "this_flight": 440000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -15
+      },
+      "price": 1908,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ3hCUVRreE5YeEhNemd5TkRNYUN3aVAwZ3NRQWhvRFFsSk1PQnh3Z0pNQyIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIkJPRyIsbnVsbCwiQUEiLCI5MTUiXSxbIkJPRyIsIjIwMjUtMTAtMTUiLCJCU0IiLG51bGwsIkczIiwiODI0MyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 17:21"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Orlando",
+            "id": "MCO",
+            "time": "2025-10-15 18:27"
+          },
+          "duration": 66,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+          "travel_class": "Economy",
+          "flight_number": "AA 1542",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 47 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Orlando",
+            "id": "MCO",
+            "time": "2025-10-15 21:40"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2025-10-16 06:35"
+          },
+          "duration": 475,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+          "travel_class": "Economy",
+          "flight_number": "G3 7601",
           "ticket_also_sold_by": [
-            "KLM"
+            "American"
           ],
           "legroom": "76 cm",
           "extensions": [
@@ -932,458 +526,431 @@
             "Wi-Fi for a fee",
             "In-seat USB outlet",
             "Stream media to your device",
-            "Carbon emissions estimate: 91 kg"
-          ]
+            "Carbon emissions estimate: 326 kg"
+          ],
+          "overnight": true
         }
       ],
       "layovers": [
         {
-          "duration": 105,
-          "name": "Aeroporto de Amesterdão Schiphol",
-          "id": "AMS"
-        },
-        {
-          "duration": 110,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
+          "duration": 193,
+          "name": "Aeroporto Internacional de Orlando",
+          "id": "MCO"
         }
       ],
-      "total_duration": 1200,
+      "total_duration": 734,
       "carbon_emissions": {
-        "this_flight": 897000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 48
+        "this_flight": 374000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -27
       },
-      "price": 7383,
+      "price": 1932,
       "type": "One way",
       "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaE5JVmpVMk56WjhTMHczT1RGOFJ6TXhOREU0R2dzSW1vY3RFQUlhQTBKU1REZ2NjTnFlQ0E9PSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIkFNUyIsbnVsbCwiSFYiLCI1Njc2Il0sWyJBTVMiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJLTCIsIjc5MSJdLFsiR1JVIiwiMjAyNS0wOC0wNyIsIkJTQiIsbnVsbCwiRzMiLCIxNDE4Il1dXQ=="
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZzFCUVRFMU5ESjhSek0zTmpBeEdnc0lsZVVMRUFJYUEwSlNURGdjY01LV0FnPT0iLFtbIk1JQSIsIjIwMjUtMTAtMTUiLCJNQ08iLG51bGwsIkFBIiwiMTU0MiJdLFsiTUNPIiwiMjAyNS0xMC0xNSIsIkJTQiIsbnVsbCwiRzMiLCI3NjAxIl1dXQ=="
     },
     {
       "flights": [
         {
           "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 08:25"
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 22:55"
           },
           "arrival_airport": {
-            "name": "Aeroporto de Amesterdão Schiphol",
-            "id": "AMS",
-            "time": "2025-08-07 11:05"
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+            "id": "GIG",
+            "time": "2025-10-16 08:20"
           },
-          "duration": 160,
-          "airplane": "Boeing 737",
-          "airline": "Transavia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HV.png",
-          "travel_class": "Economy",
-          "flight_number": "HV 5676",
-          "ticket_also_sold_by": [
-            "KLM"
-          ],
-          "legroom": "74 cm",
-          "extensions": [
-            "Below average legroom (74 cm)",
-            "Carbon emissions estimate: 131 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Amesterdão Schiphol",
-            "id": "AMS",
-            "time": "2025-08-07 12:50"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 19:50"
-          },
-          "duration": 720,
+          "duration": 505,
           "airplane": "Boeing 777",
-          "airline": "KLM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+          "airline": "American",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
           "travel_class": "Economy",
-          "flight_number": "KL 791",
+          "flight_number": "AA 905",
           "legroom": "79 cm",
           "extensions": [
             "Average legroom (79 cm)",
             "Wi-Fi for a fee",
-            "In-seat USB outlet",
+            "In-seat power & USB outlets",
             "On-demand video",
-            "Carbon emissions estimate: 673 kg"
-          ]
+            "Carbon emissions estimate: 413 kg"
+          ],
+          "overnight": true,
+          "often_delayed_by_over_30_min": true
         },
         {
           "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 22:20"
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+            "id": "GIG",
+            "time": "2025-10-16 11:15"
           },
           "arrival_airport": {
             "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
             "id": "BSB",
-            "time": "2025-08-07 23:55"
+            "time": "2025-10-16 13:10"
           },
-          "duration": 95,
+          "duration": 115,
+          "airplane": "Boeing 737",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+          "travel_class": "Economy",
+          "flight_number": "G3 2073",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 96 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 175,
+          "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+          "id": "GIG"
+        }
+      ],
+      "total_duration": 795,
+      "carbon_emissions": {
+        "this_flight": 510000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -1
+      },
+      "price": 1942,
+      "type": "One way",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZ3hCUVRrd05YeEhNekl3TnpNYUN3amw3QXNRQWhvRFFsSk1PQnh3OXBjQyIsW1siTUlBIiwiMjAyNS0xMC0xNSIsIkdJRyIsbnVsbCwiQUEiLCI5MDUiXSxbIkdJRyIsIjIwMjUtMTAtMTYiLCJCU0IiLG51bGwsIkczIiwiMjA3MyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Miami",
+            "id": "MIA",
+            "time": "2025-10-15 03:25"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Fortaleza - Pinto Martins (FOR)",
+            "id": "FOR",
+            "time": "2025-10-15 11:25"
+          },
+          "duration": 420,
+          "airplane": "Boeing 787",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 8189",
+          "legroom": "81 cm",
+          "extensions": [
+            "Above average legroom (81 cm)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 317 kg"
+          ],
+          "overnight": true,
+          "plane_and_crew_by": "Latam Airlines Brasil"
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Fortaleza - Pinto Martins (FOR)",
+            "id": "FOR",
+            "time": "2025-10-15 14:15"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2025-10-15 16:55"
+          },
+          "duration": 160,
           "airplane": "Airbus A320",
           "airline": "LATAM",
           "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
           "travel_class": "Economy",
-          "flight_number": "LA 3259",
+          "flight_number": "LA 3741",
           "legroom": "71 cm",
           "extensions": [
             "Below average legroom (71 cm)",
+            "Wi-Fi for a fee",
             "In-seat USB outlet",
             "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
+            "Carbon emissions estimate: 147 kg"
           ],
           "plane_and_crew_by": "Latam Airlines Brasil"
         }
       ],
       "layovers": [
         {
-          "duration": 105,
-          "name": "Aeroporto de Amesterdão Schiphol",
-          "id": "AMS"
-        },
-        {
-          "duration": 150,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1230,
-      "carbon_emissions": {
-        "this_flight": 893000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 48
-      },
-      "price": 7481,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaE5JVmpVMk56WjhTMHczT1RGOFRFRXpNalU1R2dzSW05UXRFQUlhQTBKU1REZ2NjT1NzQ0E9PSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIkFNUyIsbnVsbCwiSFYiLCI1Njc2Il0sWyJBTVMiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJLTCIsIjc5MSJdLFsiR1JVIiwiMjAyNS0wOC0wNyIsIkJTQiIsbnVsbCwiTEEiLCIzMjU5Il1dXQ=="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 14:40"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-07 15:30"
-          },
-          "duration": 110,
-          "airplane": "Embraer 195",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
-          "travel_class": "Economy",
-          "flight_number": "TP 1143",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Carbon emissions estimate: 117 kg"
-          ],
-          "often_delayed_by_over_30_min": true,
-          "plane_and_crew_by": "Portugalia - Companhia Portuguesa"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Humberto Delgado",
-            "id": "LIS",
-            "time": "2025-08-07 17:40"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Fortaleza - Pinto Martins (FOR)",
-            "id": "FOR",
-            "time": "2025-08-07 21:15"
-          },
-          "duration": 455,
-          "airplane": "Airbus A330",
-          "airline": "Tap Air Portugal",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
-          "travel_class": "Economy",
-          "flight_number": "TP 35",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 431 kg"
-          ],
-          "often_delayed_by_over_30_min": true,
-          "plane_and_crew_by": "HI Fly"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de Fortaleza - Pinto Martins (FOR)",
-            "id": "FOR",
-            "time": "2025-08-08 04:40"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-08 07:20"
-          },
-          "duration": 160,
-          "airplane": "Boeing 737",
-          "airline": "Gol",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
-          "travel_class": "Economy",
-          "flight_number": "G3 1707",
-          "ticket_also_sold_by": [
-            "Tap Air Portugal"
-          ],
-          "legroom": "76 cm",
-          "extensions": [
-            "Average legroom (76 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 150 kg"
-          ],
-          "overnight": true
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 130,
-          "name": "Aeroporto Humberto Delgado",
-          "id": "LIS"
-        },
-        {
-          "duration": 445,
+          "duration": 170,
           "name": "Aeroporto Internacional de Fortaleza - Pinto Martins (FOR)",
-          "id": "FOR",
-          "overnight": true
+          "id": "FOR"
         }
       ],
-      "total_duration": 1300,
+      "total_duration": 750,
       "carbon_emissions": {
-        "this_flight": 699000,
-        "typical_for_this_route": 605000,
-        "difference_percent": 16
+        "this_flight": 464000,
+        "typical_for_this_route": 515000,
+        "difference_percent": -10
       },
-      "price": 7918,
+      "price": 1972,
       "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaEpVVURFeE5ETjhWRkF6Tlh4SE16RTNNRGNhQ3dqdnFUQVFBaG9EUWxKTU9CeHdvdXNJIixbWyJJQloiLCIyMDI1LTA4LTA3IiwiTElTIixudWxsLCJUUCIsIjExNDMiXSxbIkxJUyIsIjIwMjUtMDgtMDciLCJGT1IiLG51bGwsIlRQIiwiMzUiXSxbIkZPUiIsIjIwMjUtMDgtMDgiLCJCU0IiLG51bGwsIkczIiwiMTcwNyJdXV0="
-    },
-    {
-      "flights": [
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Ibiza",
-            "id": "IBZ",
-            "time": "2025-08-07 09:00"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 10:15"
-          },
-          "duration": 75,
-          "airplane": "Airbus A321neo",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
-          "travel_class": "Economy",
-          "flight_number": "IB 1692",
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "Wi-Fi for a fee",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 57 kg"
-          ],
-          "plane_and_crew_by": "Iberia Express"
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-            "id": "MAD",
-            "time": "2025-08-07 11:45"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 17:35"
-          },
-          "duration": 650,
-          "airplane": "Airbus A350",
-          "airline": "Iberia",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
-          "travel_class": "Economy",
-          "flight_number": "IB 271",
-          "legroom": "79 cm",
-          "extensions": [
-            "Average legroom (79 cm)",
-            "Wi-Fi for a fee",
-            "In-seat power & USB outlets",
-            "On-demand video",
-            "Carbon emissions estimate: 448 kg"
-          ]
-        },
-        {
-          "departure_airport": {
-            "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-            "id": "GRU",
-            "time": "2025-08-07 22:20"
-          },
-          "arrival_airport": {
-            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
-            "id": "BSB",
-            "time": "2025-08-07 23:55"
-          },
-          "duration": 95,
-          "airplane": "Airbus A320",
-          "airline": "LATAM",
-          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
-          "travel_class": "Economy",
-          "flight_number": "LA 3259",
-          "ticket_also_sold_by": [
-            "Iberia"
-          ],
-          "legroom": "71 cm",
-          "extensions": [
-            "Below average legroom (71 cm)",
-            "In-seat USB outlet",
-            "Stream media to your device",
-            "Carbon emissions estimate: 88 kg"
-          ],
-          "plane_and_crew_by": "Operated by Latam Airlines Brasil"
-        }
-      ],
-      "layovers": [
-        {
-          "duration": 90,
-          "name": "Aeroporto de Madrid Adolfo Suarez-Barajas",
-          "id": "MAD"
-        },
-        {
-          "duration": 285,
-          "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-          "id": "GRU"
-        }
-      ],
-      "total_duration": 1195,
-      "carbon_emissions": {
-        "this_flight": 594000,
-        "typical_for_this_route": 605000,
-        "difference_percent": -2
-      },
-      "price": 8441,
-      "type": "One way",
-      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-      "booking_token": "WyJDalJJY2s5d2VVbEZUbVJFT0VGQlJEZElla0ZDUnkwdExTMHRMUzB0TFMxdmVXd3hNMEZCUVVGQlIyaHNVWFJSVFZjMFpFbEJFaE5KUWpFMk9USjhTVUl5TnpGOFRFRXpNalU1R2dzSXNzSXpFQUlhQTBKU1REZ2NjUDIxQ1E9PSIsW1siSUJaIiwiMjAyNS0wOC0wNyIsIk1BRCIsbnVsbCwiSUIiLCIxNjkyIl0sWyJNQUQiLCIyMDI1LTA4LTA3IiwiR1JVIixudWxsLCJJQiIsIjI3MSJdLFsiR1JVIiwiMjAyNS0wOC0wNyIsIkJTQiIsbnVsbCwiTEEiLCIzMjU5Il1dXQ=="
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "booking_token": "WyJDalJJUlc4MmFIZDVMVk56Y1VWQlNuUkpORUZDUnkwdExTMHRMUzB0TFhaM1ltUjROVUZCUVVGQlIyaHdXWEEwVDJ3MVEzZEJFZzFNUVRneE9EbDhURUV6TnpReEdnc0l2NFFNRUFJYUEwSlNURGdjY0thY0FnPT0iLFtbIk1JQSIsIjIwMjUtMTAtMTUiLCJGT1IiLG51bGwsIkxBIiwiODE4OSJdLFsiRk9SIiwiMjAyNS0xMC0xNSIsIkJTQiIsbnVsbCwiTEEiLCIzNzQxIl1dXQ=="
     }
   ],
   "price_insights": {
-    "lowest_price": 4624,
-    "price_level": "typical",
+    "lowest_price": 1155,
+    "price_level": "low",
     "typical_price_range": [
-      3700,
-      6400
+      1500,
+      2100
     ],
     "price_history": [
       [
-        1749420000,
-        5282
+        1746504000,
+        1611
       ],
       [
-        1749506400,
-        5287
+        1746590400,
+        1618
       ],
       [
-        1749592800,
-        5173
+        1746676800,
+        1627
       ],
       [
-        1749679200,
-        5711
+        1746763200,
+        1604
       ],
       [
-        1749765600,
-        5346
+        1746849600,
+        1600
       ],
       [
-        1749852000,
-        5332
+        1746936000,
+        1600
       ],
       [
-        1749938400,
-        5339
+        1747022400,
+        1199
       ],
       [
-        1750024800,
-        5262
+        1747108800,
+        1203
       ],
       [
-        1750111200,
-        5214
+        1747195200,
+        1190
       ],
       [
-        1750197600,
-        5180
+        1747281600,
+        1543
       ],
       [
-        1750284000,
-        5249
+        1747368000,
+        1556
       ],
       [
-        1750370400,
-        5253
+        1747454400,
+        1551
       ],
       [
-        1750456800,
-        5272
+        1747540800,
+        1551
       ],
       [
-        1750543200,
-        5297
+        1747627200,
+        1604
       ],
       [
-        1750629600,
-        5297
+        1747713600,
+        1599
       ],
       [
-        1750716000,
-        5299
+        1747800000,
+        1552
       ],
       [
-        1750802400,
-        4601
+        1747886400,
+        1546
       ],
       [
-        1750888800,
-        4660
+        1747972800,
+        1619
       ],
       [
-        1750975200,
-        4609
+        1748059200,
+        1600
       ],
       [
-        1751061600,
-        4618
+        1748145600,
+        1600
       ],
       [
-        1751148000,
-        4618
+        1748232000,
+        1599
       ],
       [
-        1751234400,
-        4618
+        1748318400,
+        1605
       ],
       [
-        1751320800,
-        4601
+        1748404800,
+        1544
       ],
       [
-        1751407200,
-        4624
+        1748491200,
+        1557
+      ],
+      [
+        1748577600,
+        1557
+      ],
+      [
+        1748664000,
+        1569
+      ],
+      [
+        1748750400,
+        1569
+      ],
+      [
+        1748836800,
+        1566
+      ],
+      [
+        1748923200,
+        1553
+      ],
+      [
+        1749009600,
+        1543
+      ],
+      [
+        1749096000,
+        1542
+      ],
+      [
+        1749182400,
+        1529
+      ],
+      [
+        1749268800,
+        1522
+      ],
+      [
+        1749355200,
+        1523
+      ],
+      [
+        1749441600,
+        1509
+      ],
+      [
+        1749528000,
+        1507
+      ],
+      [
+        1749614400,
+        1511
+      ],
+      [
+        1749700800,
+        1501
+      ],
+      [
+        1749787200,
+        1501
+      ],
+      [
+        1749873600,
+        1504
+      ],
+      [
+        1749960000,
+        1504
+      ],
+      [
+        1750046400,
+        1502
+      ],
+      [
+        1750132800,
+        1555
+      ],
+      [
+        1750219200,
+        1303
+      ],
+      [
+        1750305600,
+        1301
+      ],
+      [
+        1750392000,
+        1022
+      ],
+      [
+        1750478400,
+        1027
+      ],
+      [
+        1750564800,
+        1027
+      ],
+      [
+        1750651200,
+        1291
+      ],
+      [
+        1750737600,
+        1490
+      ],
+      [
+        1750824000,
+        1494
+      ],
+      [
+        1750910400,
+        1506
+      ],
+      [
+        1750996800,
+        1485
+      ],
+      [
+        1751083200,
+        1485
+      ],
+      [
+        1751169600,
+        1485
+      ],
+      [
+        1751256000,
+        1488
+      ],
+      [
+        1751342400,
+        1472
+      ],
+      [
+        1751428800,
+        1480
+      ],
+      [
+        1751515200,
+        1472
+      ],
+      [
+        1751601600,
+        1153
+      ],
+      [
+        1751688000,
+        1155
       ]
     ]
   },
@@ -1392,14 +959,14 @@
       "departure": [
         {
           "airport": {
-            "id": "IBZ",
-            "name": "Aeroporto de Ibiza"
+            "id": "MIA",
+            "name": "Aeroporto Internacional de Miami"
           },
-          "city": "Ibiza",
-          "country": "Espanha",
-          "country_code": "ES",
-          "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQi8pKfP1LLj8RvxMKGXJ62rSnKIFobD6wM7hPPFoXdSwj8St2iE8IaZa-JDZvijh2G0Ws_d9XpgrW0w",
-          "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThyqDHXzmJ5mntuAlnxxSOQU6w-Pqyb2b5rNwXLupbabRav2khcODqsd9ZiMvV7C1m7meuRPOeWy9H3GZfG43X1VSwM7ieN466kG91FL4"
+          "city": "Miami",
+          "country": "Estados Unidos",
+          "country_code": "US",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjsG6ybk9C2oSVnPZUal-6l7EimKLf5gtMAhOumgD16nXBwB4X0lHH3nh-178HKbonabZtnDMdZKfDEQ",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRScvUK_JtYRXmQWoXHiT98Ajl1KTuUVO40d0Q678OpK1xyyWI8VIkHqzXE9BHfY5R35UpgbeEdcf1IhMDncXwDo29wOABY9MIUzCFLkwU"
         }
       ],
       "arrival": [

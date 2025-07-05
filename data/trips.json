@@ -21,5 +21,11 @@
         "flight_number": "TP 57"
       }
     ]
-  }
-]
+  },
+  {
+    "type": "roundtrip",
+    "total_price": 531,
+    "total_duration": 215,
+    "legs": [
+      [
+        
