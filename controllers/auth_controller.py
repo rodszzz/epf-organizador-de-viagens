@@ -35,10 +35,10 @@ class AuthController(BaseController):
                 password_is_correct = user.check_password(password)
                 print(f"[DEBUG] A senha fornecida está correta? {password_is_correct}")
 
-                if password_is_correct:
-                    print("[DEBUG] Login bem-sucedido! A redirecionar...")
-                    response.set_cookie("user_id", str(user.id), secret='your-very-secret-key')
-                    return redirect('/search')
+            if user and user.check_password(password):
+                # ... (código de debug, se ainda existir)
+                response.set_cookie("user_id", str(user.id), secret='your-very-secret-key')
+                return redirect('/dashboard') # Alterado de '/search' para '/dashboard'
             else:
                 print("[DEBUG] Utilizador com este email não foi encontrado.")
             # --- Fim do Diagnóstico ---

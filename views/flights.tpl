@@ -1,93 +1,97 @@
-%# views/flights.tpl
+% rebase('layout.tpl', title='Ofertas de Voo')
 
-<h1>Ofertas de Ida &amp; Volta</h1>
+<style>
+    /* Estilos para melhorar a aparência da página de voos */
+    .flight-offer {
+        border: 1px solid #dbdbdb;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .flight-offer:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .flight-leg {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .flight-leg:not(:last-child) {
+        border-bottom: 1px dashed #dbdbdb;
+    }
+    .columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        flex: 1;
+        padding: 0 1rem;
+    }
+    .has-text-weight-bold {
+        font-weight: bold;
+    }
+    .summary-footer {
+        border-top: 2px solid #333;
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
 
-% if offers:
-  % for o in offers:
-    <div class="offer-card" style="border:1px solid #ccc; padding:16px; margin-bottom:24px; border-radius:8px;">
+<div class="container">
+    <h1 class="title">Ofertas de Voos Disponíveis</h1>
 
-      <!-- Cabeçalho: logos + preço/duração -->
-      <header style="display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <img src="{{o['ida'].airline_logo}}" alt="Logo Ida" style="height:32px; margin-right:8px;">
-          <img src="{{o['volta'].airline_logo}}" alt="Logo Volta" style="height:32px;">
+    % if not offers:
+        <div class="notification is-warning">
+            Nenhuma oferta de voo encontrada. Por favor, faça uma nova busca.
+            <a href="/search">Voltar à busca</a>
         </div>
-        <div style="text-align:right;">
-          <div style="font-size:1.25em; font-weight:bold;">R$ {{o['total_price']}}</div>
-          <div style="color:#555;">Duração total: {{o['total_duration_hm']}}</div>
-        </div>
-      </header>
+    % else:
+        % for offer in offers:
+            <div class="flight-offer">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle is-4">✈️ Ida</h3>
+                        % for leg in offer['ida'].legs:
+                            <div class="flight-leg">
+                                <p><span class="has-text-weight-bold">De:</span> {{leg.departure_airport_name}} ({{leg.departure_airport_code}})</p>
+                                <p><span class="has-text-weight-bold">Para:</span> {{leg.arrival_airport_name}} ({{leg.arrival_airport_code}})</p>
+                                <p><span class="has-text-weight-bold">Companhia:</span> {{leg.airline}}</p>
+                                <p><span class="has-text-weight-bold">Duração:</span> {{leg.duration_hm}}</p>
+                            </div>
+                        % end
+                        <p class="has-text-weight-bold">Preço Ida: R$ {{offer['ida'].price}}</p>
+                    </div>
 
-      <!-- Seção Ida -->
-      <section style="margin-top:16px;">
-        <h3>Ida ({{o['ida'].total_duration_hm}})</h3>
-        <table style="width:100%; border-collapse:collapse;">
-          <thead>
-            <tr style="background:#f5f5f5;">
-              <th style="padding:8px; border:1px solid #ddd;">Origem</th>
-              <th style="padding:8px; border:1px solid #ddd;">Partida</th>
-              <th style="padding:8px; border:1px solid #ddd;">Destino</th>
-              <th style="padding:8px; border:1px solid #ddd;">Chegada</th>
-              <th style="padding:8px; border:1px solid #ddd;">Companhia</th>
-              <th style="padding:8px; border:1px solid #ddd;">Duração</th>
-            </tr>
-          </thead>
-          <tbody>
-            % for leg in o['ida'].legs:
-            <tr>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.departure_airport_code}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.departure_time}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.arrival_airport_code}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.arrival_time}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.airline}} {{leg.flight_number}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.duration_hm}}</td>
-            </tr>
-            % end
-          </tbody>
-        </table>
-      </section>
+                    <div class="column">
+                        <h3 class="subtitle is-4">↩️ Volta</h3>
+                        % for leg in offer['volta'].legs:
+                            <div class="flight-leg">
+                                <p><span class="has-text-weight-bold">De:</span> {{leg.departure_airport_name}} ({{leg.departure_airport_code}})</p>
+                                <p><span class="has-text-weight-bold">Para:</span> {{leg.arrival_airport_name}} ({{leg.arrival_airport_code}})</p>
+                                <p><span class="has-text-weight-bold">Companhia:</span> {{leg.airline}}</p>
+                                <p><span class="has-text-weight-bold">Duração:</span> {{leg.duration_hm}}</p>
+                            </div>
+                        % end
+                        <p class="has-text-weight-bold">Preço Volta: R$ {{offer['volta'].price}}</p>
+                    </div>
+                </div>
 
-      <!-- Seção Volta -->
-      <section style="margin-top:16px;">
-        <h3>Volta ({{o['volta'].total_duration_hm}})</h3>
-        <table style="width:100%; border-collapse:collapse;">
-          <thead>
-            <tr style="background:#f5f5f5;">
-              <th style="padding:8px; border:1px solid #ddd;">Origem</th>
-              <th style="padding:8px; border:1px solid #ddd;">Partida</th>
-              <th style="padding:8px; border:1px solid #ddd;">Destino</th>
-              <th style="padding:8px; border:1px solid #ddd;">Chegada</th>
-              <th style="padding:8px; border:1px solid #ddd;">Companhia</th>
-              <th style="padding:8px; border:1px solid #ddd;">Duração</th>
-            </tr>
-          </thead>
-          <tbody>
-            % for leg in o['volta'].legs:
-            <tr>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.departure_airport_code}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.departure_time}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.arrival_airport_code}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.arrival_time}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.airline}} {{leg.flight_number}}</td>
-              <td style="padding:8px; border:1px solid #ddd;">{{leg.duration_hm}}</td>
-            </tr>
-            % end
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Botão de Reserva (temporariamente removido o deep-link) -->
-      <div style="margin-top:16px; text-align:right;">
-        <button
-          style="padding:8px 16px; border:none; border-radius:4px; background:#0078D4; color:white; cursor:not-allowed;"
-          disabled>
-          Reservar Ida &amp; Volta
-        </button>
-      </div>
-
-    </div>
-    <hr>
-  % end
-% else:
-  <p>Nenhuma oferta disponível.</p>
-% end
+                <div class="summary-footer">
+                    <div>
+                        <h4 class="title is-4">Total: R$ {{offer['total_price']}}</h4>
+                        <p>Duração total: {{offer['total_duration_hm']}}</p>
+                    </div>
+                    <div>
+                        <a href="/flights/book?offer_idx={{offer['idx']}}" class="button is-primary is-large">
+                            Reservar Ida e Volta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        % end
+    % end
+</div>

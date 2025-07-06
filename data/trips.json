@@ -1,1 +1,42 @@
-[]
+{
+    "5": [
+        {
+            "ida": {
+                "partida": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek (BSB)",
+                "chegada": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro (GRU)",
+                "duracao_total": "1h 45m",
+                "preco": 277,
+                "booking_token": "WyJDalJJZUhWTmNFZEtVVzB5UjBWQlNUWmlOMUZDUnkwdExTMHRMUzB0TFhaMFltZG9ORUZCUVVGQlIyaHhjR3c0U25WS1VYTkJFZ1pITXpJd09UY2FDd2paMXdFUUFob0RRbEpNT0J4dzV5Yz0iLFtbIkJTQiIsIjIwMjUtMDgtMDkiLCJHUlUiLG51bGwsIkczIiwiMjA5NyJdXV0="
+            },
+            "volta": {
+                "partida": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro (GRU)",
+                "chegada": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek (BSB)",
+                "duracao_total": "1h 50m",
+                "preco": 277,
+                "booking_token": "WyJDalJJV21FMFRXWnphVFZ4WmtGQlNITkJkR2RDUnkwdExTMHRMUzB0TFhsc2IzRXhOVUZCUVVGQlIyaHhjRzFCU0daaFZDMUJFZ1pITXpFME9EUWFDd2lLMkFFUUFob0RRbEpNT0J4dzhDYz0iLFtbIkdSVSIsIjIwMjUtMDgtMjEiLCJCU0IiLG51bGwsIkczIiwiMTQ4NCJdXV0="
+            },
+            "preco_total": 554,
+            "duracao_total_viagem": "3h 35m"
+        }
+    ],
+    "4": [
+        {
+            "ida": {
+                "partida": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek (BSB)",
+                "chegada": "Aeroporto Internacional de Miami (MIA)",
+                "duracao_total": "12h 10m",
+                "preco": 1628,
+                "booking_token": "WyJDalJJY2xFNVZWUkRjMnhVUTJOQlNDMDJNWGRDUnkwdExTMHRMUzB0YjJ0aWFYb3lPRUZCUVVGQlIyaHhjRFl3UjFaWlNubEJFZzFNUVRJME1ETjhURUV5TmprMEdnc0kxdmNKRUFJYUEwSlNURGdjY05qcUFRPT0iLFtbIkJTQiIsIjIwMjUtMTItMDQiLCJMSU0iLG51bGwsIkxBIiwiMjQwMyJdLFsiTElNIiwiMjAyNS0xMi0wNCIsIk1JQSIsbnVsbCwiTEEiLCIyNjk0Il1dXQ=="
+            },
+            "volta": {
+                "partida": "Aeroporto Internacional de Miami (MIA)",
+                "chegada": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek (BSB)",
+                "duracao_total": "11h 55m",
+                "preco": 1616,
+                "booking_token": "WyJDalJJVTJ0VlJsZG5NbXBPYWpoQlRXMU5NbmRDUnkwdExTMHRMUzB0ZG5kaVozQXlNa0ZCUVVGQlIyaHhjRFkwUlhsU00ybEJFZzFITXpjM05EVjhSek14TnpZM0dnc0krZTBKRUFJYUEwSlNURGdjY1BMb0FRPT0iLFtbIk1JQSIsIjIwMjUtMTItMTEiLCJCRUwiLG51bGwsIkczIiwiNzc0NSJdLFsiQkVMIiwiMjAyNS0xMi0xMiIsIkJTQiIsbnVsbCwiRzMiLCIxNzY3Il1dXQ=="
+            },
+            "preco_total": 3244,
+            "duracao_total_viagem": "24h 5m"
+        }
+    ]
+}

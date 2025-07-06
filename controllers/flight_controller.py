@@ -1,23 +1,20 @@
-# controllers/flight_controller.py
-
 from bottle import Bottle, request, redirect
-from .base_controller      import BaseController
-from services.flight_service import FlightService
+from .base_controller import BaseController
+from services.trip_service import TripService
 
 flight_routes = Bottle()
 
 class FlightController(BaseController):
     def __init__(self, app):
         super().__init__(app)
-        self.setup_routes()
-
-    def setup_routes(self):
-        # Listagem de ofertas
-        self.app.route('/flights',      method='GET', callback=self.list_flights)
-        # Redirecionamento para o deep_link (ida ou volta)
+        # O método setup_routes agora está no BaseController, mas o mantemos para rotas específicas
+        self.app.route('/flights', method='GET', callback=self.list_flights)
+        # A rota de reserva agora guarda a viagem
         self.app.route('/flights/book', method='GET', callback=self.book_flight)
 
     def list_flights(self):
+        # A lógica de list_flights do seu código original
+        from services.flight_service import FlightService
         ida_offers   = FlightService('ida').list_offers()
         volta_offers = FlightService('volta').list_offers()
 
@@ -33,26 +30,33 @@ class FlightController(BaseController):
                 'total_price':       total_price,
                 'total_duration_hm': f"{h}h {m}m"
             })
-
+        
         return self.render('flights', offers=combined)
 
+    # Este método foi modificado para guardar a viagem
     def book_flight(self):
-        # Lê o índice e a perna (ida ou volta)
-        idx = int(request.query.get('offer_idx', 0))
-        leg = request.query.get('leg', 'ida')
+        # Primeiro, verificamos se o utilizador está logado
+        user_id = request.get_cookie("user_id", secret='your-very-secret-key')
+        if not user_id:
+            return redirect('/login')
 
-        # Recarrega as ofertas para selecionar a correta
-        ida_offers   = FlightService('ida').list_offers()
-        volta_offers = FlightService('volta').list_offers()
-        offer = ida_offers[idx] if leg == 'ida' else volta_offers[idx]
+        # Obtém o índice da oferta a partir da URL (?offer_idx=...)
+        try:
+            offer_idx = int(request.query.get('offer_idx', -1))
+        except (ValueError, TypeError):
+            return "Índice da oferta inválido."
+        
+        # Cria e guarda a viagem
+        trip_service = TripService()
+        saved_trip = trip_service.save_roundtrip_for_user(user_id, offer_idx)
 
-        # Usa o deep_link diretamente
-        link = getattr(offer, 'deep_link', None)
-        if link:
-            return redirect(link)
+        if saved_trip:
+            # Redireciona para a página de viagens do utilizador para ele ver o que guardou
+            return redirect('/trips')
+        else:
+            # Se a oferta não foi encontrada, volta para a listagem
+            return redirect('/flights')
 
-        # Fallback: volta para a listagem se não tiver link
-        return redirect('/flights')
 
 # Registra o controller
 FlightController(flight_routes)
