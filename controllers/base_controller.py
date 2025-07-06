@@ -1,6 +1,5 @@
 from bottle import static_file
 
-
 class BaseController:
     def __init__(self, app):
         self.app = app
@@ -18,20 +17,15 @@ class BaseController:
         # Rota para arquivos estáticos (CSS, JS, imagens)
         self.app.route('/static/<filename:path>', callback=self.serve_static)
 
-        # rota para pagina login
-        self.app.route('/login', method=['GET', 'POST'], callback=self.login)
+        # A ROTA DE LOGIN FOI REMOVIDA DAQUI
 
-    def login(self):
-        return self.render('login')
+    # O MÉTODO DE LOGIN FOI REMOVIDO DAQUI
 
     def outra_func(self):
         return self.render('outro_arquivo')
 
-    # TODO: mudar redirect para "/login"
-    # pq ao entrar vc "loga" ou cria sua conta,
-    # aí só depois vc faz uso do serviço!!!
     def home_redirect(self):
-        """Redireciona a rota raiz para /users"""
+        """Redireciona a rota raiz para /login"""
         return self.redirect('/login')
 
     def helper(self):
@@ -50,3 +44,13 @@ class BaseController:
         """Método auxiliar para redirecionamento"""
         from bottle import redirect as bottle_redirect
         return bottle_redirect(path)
+
+    def login_required(self, callback):
+        """Decorator para proteger rotas que exigem login"""
+        from bottle import request, redirect
+        def wrapper(*args, **kwargs):
+            user_id = request.get_cookie("user_id", secret='your-very-secret-key')
+            if user_id:
+                return callback(*args, **kwargs)
+            return redirect('/login')
+        return wrapper

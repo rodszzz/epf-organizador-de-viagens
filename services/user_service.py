@@ -1,14 +1,12 @@
 from bottle import request
 from models.user import UserModel, User
 
-
 class UserService:
     def __init__(self):
         self.user_model = UserModel()
 
     def get_all(self):
-        users = self.user_model.get_all()
-        return users
+        return self.user_model.get_all()
 
     def save(self):
         last_id = max([u.id for u in self.user_model.get_all()], default=0)
@@ -16,8 +14,13 @@ class UserService:
         name = request.forms.get('name')
         email = request.forms.get('email')
         birthdate = request.forms.get('birthdate')
+        password = request.forms.get('password')
 
-        user = User(id=new_id, name=name, email=email, birthdate=birthdate)
+        # Cria um usuário sem hash de senha inicial
+        user = User(id=new_id, name=name, email=email, birthdate=birthdate, password_hash='')
+        # Define a senha, que irá gerar o hash
+        user.set_password(password)
+        
         self.user_model.add_user(user)
 
     def get_by_id(self, user_id):
@@ -27,10 +30,14 @@ class UserService:
         name = request.forms.get('name')
         email = request.forms.get('email')
         birthdate = request.forms.get('birthdate')
+        password = request.forms.get('password')
 
         user.name = name
         user.email = email
         user.birthdate = birthdate
+        
+        if password:
+            user.set_password(password)
 
         self.user_model.update_user(user)
 

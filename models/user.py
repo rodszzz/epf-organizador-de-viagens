@@ -1,35 +1,41 @@
 import json
 import os
+from werkzeug.security import generate_password_hash, check_password_hash
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 
 
 class User:
-    def __init__(self, id, name, email, birthdate):
+    def __init__(self, id, name, email, birthdate, password_hash):
         self.id = id
         self.name = name
         self.email = email
         self.birthdate = birthdate
+        self.password_hash = password_hash
 
-    def __repr__(self):
-        return (f"User(id={self.id}, name='{self.name}', email='{self.email}', "
-                f"birthdate='{self.birthdate}'")
+    def set_password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
 
     def to_dict(self):
         return {
             'id': self.id,
             'name': self.name,
             'email': self.email,
-            'birthdate': self.birthdate
+            'birthdate': self.birthdate,
+            'password_hash': self.password_hash
         }
 
     @classmethod
     def from_dict(cls, data):
         return cls(
-            id=data['id'],
-            name=data['name'],
-            email=data['email'],
-            birthdate=data['birthdate']
+            id=data.get('id'),
+            name=data.get('name'),
+            email=data.get('email'),
+            birthdate=data.get('birthdate'),
+            password_hash=data.get('password_hash')
         )
 
 
@@ -42,9 +48,12 @@ class UserModel:
     def _load(self):
         if not os.path.exists(self.FILE_PATH):
             return []
-        with open(self.FILE_PATH, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return [User(**item) for item in data]
+        try:
+            with open(self.FILE_PATH, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return [User.from_dict(item) for item in data]
+        except (json.JSONDecodeError, TypeError):
+            return []
 
     def _save(self):
         with open(self.FILE_PATH, 'w', encoding='utf-8') as f:
@@ -56,6 +65,9 @@ class UserModel:
 
     def get_by_id(self, user_id: int):
         return next((u for u in self.users if u.id == user_id), None)
+        
+    def get_by_email(self, email: str):
+        return next((u for u in self.users if u.email.lower() == email.lower()), None)
 
     def add_user(self, user: User):
         self.users.append(user)

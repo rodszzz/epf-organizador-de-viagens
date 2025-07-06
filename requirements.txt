@@ -2,3 +2,4 @@ bottle
 pylint
 serpapi
 python-dotenv
+werkzeug
