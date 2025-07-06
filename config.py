@@ -6,8 +6,8 @@ class Config:
     DATA_PATH = os.path.join(BASE_DIR, 'data')   # ← aqui
     TEMPLATE_PATH = os.path.join(BASE_DIR, 'views')
     STATIC_PATH = os.path.join(BASE_DIR, 'static')
-    HOST = 'localhost'
-    PORT = 10000
+    HOST = '0.0.0.0'
+    PORT = 8080
     DEBUG = True
     RELOADER = True
     SECRET_KEY = 'sua-chave-secreta-aqui'
