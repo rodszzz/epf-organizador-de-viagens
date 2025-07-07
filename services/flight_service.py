@@ -1,5 +1,6 @@
 from models.flights import FlightModel
 
+
 class FlightService:
     def __init__(self, direction='ida'):
         self.model = FlightModel(direction)

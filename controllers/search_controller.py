@@ -4,14 +4,17 @@ from services.search_service import search_and_save
 
 search_routes = Bottle()
 
+
 class SearchController(BaseController):
     def __init__(self, app):
         super().__init__(app)
         self.setup_routes()
 
     def setup_routes(self):
-        self.app.route('/search', method='GET',  callback=self.login_required(self.form))
-        self.app.route('/search', method='POST', callback=self.login_required(self.do_search))
+        self.app.route('/search', method='GET',
+                       callback=self.login_required(self.form))
+        self.app.route('/search', method='POST',
+                       callback=self.login_required(self.do_search))
 
     def form(self):
         return self.render('search')
@@ -24,5 +27,6 @@ class SearchController(BaseController):
 
         search_and_save(dep, arr, out, ret)
         return redirect('/flights')
+
 
 SearchController(search_routes)

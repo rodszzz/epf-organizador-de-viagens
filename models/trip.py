@@ -2,12 +2,14 @@ import json
 import os
 from config import Config
 
+
 class Trip:
     def __init__(self, ida, volta, total_price, total_duration_hm):
         self.ida = ida
         self.volta = volta
         self.total_price = total_price
         self.total_duration_hm = total_duration_hm
+
 
 class TripModel:
     FILE_PATH = os.path.join(Config.DATA_PATH, 'trips.json')
@@ -36,7 +38,7 @@ class TripModel:
         user_id_str = str(user_id)
         if user_id_str not in self.trips_by_user:
             self.trips_by_user[user_id_str] = []
-        
+
         trip_data = {
             'ida': {
                 'partida': f"{trip.ida.legs[0].departure_airport_name} ({trip.ida.legs[0].departure_airport_code})",
@@ -55,7 +57,7 @@ class TripModel:
             'preco_total': trip.total_price,
             'duracao_total_viagem': trip.total_duration_hm
         }
-        
+
         self.trips_by_user[user_id_str].append(trip_data)
         self._save()
 

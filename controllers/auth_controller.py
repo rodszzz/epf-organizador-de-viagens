@@ -5,6 +5,7 @@ from services.user_service import UserService
 
 auth_routes = Bottle()
 
+
 class AuthController(BaseController):
     def __init__(self, app):
         super().__init__(app)
@@ -14,7 +15,8 @@ class AuthController(BaseController):
     def _setup_routes(self):
         self.app.route('/login', method=['GET', 'POST'], callback=self.login)
         self.app.route('/logout', method='GET', callback=self.logout)
-        self.app.route('/register', method=['GET', 'POST'], callback=self.register)
+        self.app.route(
+            '/register', method=['GET', 'POST'], callback=self.register)
 
     def login(self):
         if request.method == 'POST':
@@ -22,24 +24,27 @@ class AuthController(BaseController):
             password = request.forms.get('password')
 
             print(f"\n[DEBUG] Tentativa de login com email: {email}")
-            
+
             user = self.user_model.get_by_email(email)
 
             if user:
-                print(f"[DEBUG] Utilizador encontrado: {user.name} (ID: {user.id})")
-                
+                print(f"[DEBUG] Utilizador encontrado: {
+                      user.name} (ID: {user.id})")
+
                 password_is_correct = user.check_password(password)
-                print(f"[DEBUG] A senha fornecida está correta? {password_is_correct}")
+                print(f"[DEBUG] A senha fornecida está correta? {
+                      password_is_correct}")
 
             if user and user.check_password(password):
-                response.set_cookie("user_id", str(user.id), secret='your-very-secret-key')
-                return redirect('/dashboard') 
+                response.set_cookie("user_id", str(
+                    user.id), secret='your-very-secret-key')
+                return redirect('/dashboard')
             else:
                 print("[DEBUG] Utilizador com este email não foi encontrado.")
 
             print("[DEBUG] Login falhou. A recarregar a página de login com erro.")
             return self.render('login', error="Email ou senha inválidos.")
-        
+
         return self.render('login', error=None)
 
     def logout(self):
@@ -62,5 +67,6 @@ class AuthController(BaseController):
             return redirect('/login')
 
         return self.render('register', error=None)
+
 
 AuthController(auth_routes)

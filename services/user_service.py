@@ -1,6 +1,7 @@
 from bottle import request
 from models.user import UserModel, User
 
+
 class UserService:
     def __init__(self):
         self.user_model = UserModel()
@@ -15,7 +16,8 @@ class UserService:
         email = request.forms.get('email')
         birthdate = request.forms.get('birthdate')
         password = request.forms.get('password')
-        user = User(id=new_id, name=name, email=email, birthdate=birthdate, password_hash='')
+        user = User(id=new_id, name=name, email=email,
+                    birthdate=birthdate, password_hash='')
         user.set_password(password)
         self.user_model.add_user(user)
 
@@ -31,7 +33,7 @@ class UserService:
         user.name = name
         user.email = email
         user.birthdate = birthdate
-        
+
         if password:
             user.set_password(password)
 

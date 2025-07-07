@@ -31,6 +31,10 @@ poo-python-bottle-template/
 
 ---
 
+## Diagrama de classes
+
+![diagrama de classes](./diagramaDeClassesOO25_certo.png)
+
 ## 📁 Descrição das Pastas
 
 ### `controllers/`
@@ -77,13 +81,17 @@ venv\\Scripts\\activate     # Windows
 ```bash
 pip install -r requirements.txt
 ```
+3. crie o arquivo `.env` na raiz do seu projeto e ponha a sua api key do [serpapi](https://serpapi.com/)
+```bash
+SERPAPI_KEY=api_key_aqui
+```
 
-3. Rode a aplicação:
+4. Rode a aplicação:
 ```bash
 python main.py
 ```
 
-4. Accese sua aplicação no navegador em: [http://localhost:8080](http://localhost:8080)
+5. Accese sua aplicação no navegador em: [http://localhost:8080](http://localhost:8080)
 
 ---
 

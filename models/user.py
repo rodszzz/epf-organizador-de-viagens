@@ -61,15 +61,15 @@ class UserModel:
                       f, indent=4, ensure_ascii=False)
 
     def get_all(self):
-        self.users = self._load() # CORREÇÃO
+        self.users = self._load()
         return self.users
 
     def get_by_id(self, user_id: int):
-        self.users = self._load() # CORREÇÃO
+        self.users = self._load()
         return next((u for u in self.users if u.id == user_id), None)
-        
+
     def get_by_email(self, email: str):
-        self.users = self._load() # CORREÇÃO
+        self.users = self._load()
         return next((u for u in self.users if u.email.lower() == email.lower()), None)
 
     def add_user(self, user: User):
@@ -77,7 +77,7 @@ class UserModel:
         self._save()
 
     def update_user(self, updated_user: User):
-        self.users = self._load() # CORREÇÃO
+        self.users = self._load()
         for i, user in enumerate(self.users):
             if user.id == updated_user.id:
                 self.users[i] = updated_user
@@ -85,6 +85,6 @@ class UserModel:
                 break
 
     def delete_user(self, user_id: int):
-        self.users = self._load() # CORREÇÃO
+        self.users = self._load()
         self.users = [u for u in self.users if u.id != user_id]
         self._save()

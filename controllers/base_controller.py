@@ -1,5 +1,6 @@
 from bottle import static_file
 
+
 class BaseController:
     def __init__(self, app):
         self.app = app
@@ -36,8 +37,10 @@ class BaseController:
 
     def login_required(self, callback):
         from bottle import request, redirect
+
         def wrapper(*args, **kwargs):
-            user_id = request.get_cookie("user_id", secret='your-very-secret-key')
+            user_id = request.get_cookie(
+                "user_id", secret='your-very-secret-key')
             if user_id:
                 return callback(*args, **kwargs)
             return redirect('/login')
