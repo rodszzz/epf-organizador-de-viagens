@@ -1,5 +1,3 @@
-# controllers/search_controller.py
-
 from bottle import Bottle, request, redirect
 from .base_controller import BaseController
 from services.search_service import search_and_save
@@ -12,16 +10,13 @@ class SearchController(BaseController):
         self.setup_routes()
 
     def setup_routes(self):
-        # Protege o formulário e a ação de busca
         self.app.route('/search', method='GET',  callback=self.login_required(self.form))
         self.app.route('/search', method='POST', callback=self.login_required(self.do_search))
 
     def form(self):
-        # Renderiza views/search.tpl
         return self.render('search')
 
     def do_search(self):
-        # ... (código existente)
         dep = request.forms.get('departure_id')
         arr = request.forms.get('arrival_id')
         out = request.forms.get('outbound_date')
@@ -30,5 +25,4 @@ class SearchController(BaseController):
         search_and_save(dep, arr, out, ret)
         return redirect('/flights')
 
-# Monta as rotas
 SearchController(search_routes)

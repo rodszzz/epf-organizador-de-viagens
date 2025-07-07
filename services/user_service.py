@@ -15,12 +15,8 @@ class UserService:
         email = request.forms.get('email')
         birthdate = request.forms.get('birthdate')
         password = request.forms.get('password')
-
-        # Cria um usuário sem hash de senha inicial
         user = User(id=new_id, name=name, email=email, birthdate=birthdate, password_hash='')
-        # Define a senha, que irá gerar o hash
         user.set_password(password)
-        
         self.user_model.add_user(user)
 
     def get_by_id(self, user_id):

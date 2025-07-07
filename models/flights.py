@@ -1,12 +1,9 @@
-# models/flights.py
-
 import os
 import json
 from config import Config
 
 class FlightLeg:
     def __init__(self, dep, arr, duration, airline, flight_number, travel_class, airplane):
-        # dep e arr são dicts: {'name': ..., 'id': ..., 'time': ...}
         self.departure_airport_name = dep['name']
         self.departure_airport_code = dep['id']
         self.departure_time         = dep['time']
@@ -26,7 +23,6 @@ class FlightLeg:
 
 class FlightOffer:
     def __init__(self, raw: dict):
-        # mapeia cada perna (leg)
         self.legs           = [
             FlightLeg(
                 leg['departure_airport'],
@@ -44,7 +40,6 @@ class FlightOffer:
         self.type           = raw.get('type', '')
         self.airline_logo   = raw.get('airline_logo', '')
         self.booking_token  = raw.get('booking_token', '')
-        # **novo**: link direto para reserva
         self.deep_link      = raw.get('deep_link', '')
 
     @property
@@ -54,10 +49,6 @@ class FlightOffer:
 
     @property
     def booking_link(self):
-        """
-        Retorna o deep_link, caso exista,
-        para ser usado no template.
-        """
         return self.deep_link
 
 
@@ -67,9 +58,7 @@ class FlightModel:
         path = os.path.join(Config.DATA_PATH, filename)
         with open(path, encoding='utf-8') as f:
             data = json.load(f)
-        # supondo que o JSON tenha a chave 'best_flights'
         self.raw_offers = data.get('best_flights', [])
 
     def get_all(self):
-        # aqui sim passamos cada raw para o construtor
         return [FlightOffer(raw) for raw in self.raw_offers]

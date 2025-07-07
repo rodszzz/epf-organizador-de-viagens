@@ -33,5 +33,26 @@
         "email": "renatogameiro2@gmail.com",
         "birthdate": "2000-02-03",
         "password_hash": "scrypt:32768:8:1$HR1vh1XLj43zAgmb$95eaac154e0b3895b4b21f72b2e0106a7feab096a3a109eba15f44f0843598a32ed6ee9a49ca1d45fb55465fad02d017ebd24398b49baa93b5976af6259f2de6"
+    },
+    {
+        "id": 6,
+        "name": "aaaa",
+        "email": "renadocorre@gmail.com",
+        "birthdate": "2010-02-03",
+        "password_hash": "scrypt:32768:8:1$l2rWD5JHArLcPiL4$810033abfd47e0007f0b37de98058c918a88ddf3e58e6edef391b1459e92eb117be0aa0054df94b8c08c61896796e3f278731e36d4aa255989663a69766e50b0"
+    },
+    {
+        "id": 7,
+        "name": "joao",
+        "email": "joaozinhogamer12@gmail.com",
+        "birthdate": "1200-03-02",
+        "password_hash": "scrypt:32768:8:1$wssh9o5YwS4BbSm1$89795b72f648379c70aa3dfbf5b4586154693ef41818e2e3b2628d5f4bfa4d9dc1b6f2f19f3de56e64d6ae298e9cde6fdefb65b04125e0cb046028adc1dac6dd"
+    },
+    {
+        "id": 8,
+        "name": "pedrinho",
+        "email": "pedrinhogamer12@gmail.com",
+        "birthdate": "2000-03-02",
+        "password_hash": "scrypt:32768:8:1$uTLM6KOKLOYWv9Jc$7e827b54c4ce335d77355a76b7a7f2b35f16afada7e5d4fe5f27d92d93c2bd07a7c545b750f869a66e0dea1e1730b255dccb4cc8f480614ebce7107a57ccd309"
     }
 ]
